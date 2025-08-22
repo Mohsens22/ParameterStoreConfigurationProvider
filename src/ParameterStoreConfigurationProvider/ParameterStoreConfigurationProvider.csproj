@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>Use AWS ParameterStore to configure your .net core project</Description>
     <PackageProjectUrl>https://github.com/schwamster/ParameterStoreConfigurationProvider</PackageProjectUrl>
@@ -12,10 +12,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AWSSDK.Core" Version="3.3.19" />
-    <PackageReference Include="AWSSDK.SimpleSystemsManagement" Version="3.3.14" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.0.0" />
+    <PackageReference Include="AWSSDK.Core" Version="$(AWSSDK-Core)" />
+    <PackageReference Include="AWSSDK.SimpleSystemsManagement" Version="$(AWSSDK-SimpleSystemsManagement)" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="$(Microsoft-Extensions-Configuration)" />
   </ItemGroup>
 
 </Project>

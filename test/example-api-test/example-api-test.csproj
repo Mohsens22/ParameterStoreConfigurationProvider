@@ -1,8 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
-
+    <TargetFramework>net8.0</TargetFramework>
+	<IsTestProject>true</IsTestProject>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
@@ -14,10 +14,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="2.0.1" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0-preview-20170628-02" />
-    <PackageReference Include="xunit" Version="2.2.0" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="$(Microsoft-AspNetCore-TestHost)" />
+	  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(Microsoft-NET-Test-Sdk)" />
+	  <PackageReference Include="xunit" Version="$(xunit)" />
+	  <PackageReference Include="xunit.runner.visualstudio" Version="$(xunit-runner-visualstudio)">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+	  </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
