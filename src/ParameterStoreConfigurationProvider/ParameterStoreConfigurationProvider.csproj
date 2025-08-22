@@ -1,22 +1,26 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Description>Use AWS ParameterStore to configure your .net project</Description>
-    <PackageProjectUrl>https://github.com/schwamster/ParameterStoreConfigurationProvider</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/schwamster/ParameterStoreConfigurationProvider/blob/master/LICENSE</PackageLicenseUrl>
-    <Copyright>Bastian Töpfer</Copyright>
-    <PackageTags>AWS ParameterStore Configuration</PackageTags>
-	<!-- First Part: {MajorVersion}.{MinorNoneBreakingVersion} -->
-	<!-- Second Part: Matching the underlying AWSSDK version -->
-    <Version>2.0.3.7</Version>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
 
-  <ItemGroup>
-    <PackageReference Include="AWSSDK.Core" Version="$(AWSSDK-Core)" />
-    <PackageReference Include="AWSSDK.SimpleSystemsManagement" Version="$(AWSSDK-SimpleSystemsManagement)" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="$(Microsoft-Extensions-Configuration)" />
-  </ItemGroup>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Description>Use AWS ParameterStore to configure your .net project</Description>
+		<PackageProjectUrl>https://github.com/mohsens22/ParameterStoreConfigurationProvider</PackageProjectUrl>
+		<PackageLicenseUrl>https://github.com/mohsens22/ParameterStoreConfigurationProvider/blob/master/LICENSE</PackageLicenseUrl>
+		<Copyright>Bastian Töpfer</Copyright>
+		<RepositoryUrl>https://github.com/mohsens22/ParameterStoreConfigurationProvider</RepositoryUrl>
+		<Authors>Bastian Töpfer-Mohsens22</Authors>
+		<PackageTags>AWS ParameterStore Configuration</PackageTags>
+		<!-- First Part: {MajorVersion}.{MinorNoneBreakingVersion} -->
+		<!-- Second Part: Matching the underlying AWSSDK version -->
+		<Version>2.0.3.7</Version>
+		<PackageReleaseNotes>Targeting modern package versions</PackageReleaseNotes>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AWSSDK.Core" Version="$(AWSSDK-Core)" />
+		<PackageReference Include="AWSSDK.SimpleSystemsManagement" Version="$(AWSSDK-SimpleSystemsManagement)" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="$(Microsoft-Extensions-Configuration)" />
+	</ItemGroup>
 
 </Project>
