@@ -9,9 +9,8 @@
 		<Description>Use AWS ParameterStore to configure your .net project</Description>
 		<PackageProjectUrl>https://github.com/mohsens22/ParameterStoreConfigurationProvider</PackageProjectUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<Copyright>Bastian Töpfer</Copyright>
+		<Copyright>Bastian Töpfer, Mohsens22</Copyright>
 		<RepositoryUrl>https://github.com/mohsens22/ParameterStoreConfigurationProvider</RepositoryUrl>
-		<PackageReadmeFile>https://github.com/Mohsens22/ParameterStoreConfigurationProvider/blob/release/2-0-3-7/Readme.md</PackageReadmeFile>
 		<Authors>Bastian Töpfer, Mohsens22</Authors>
 		<PackageTags>AWS ParameterStore Configuration</PackageTags>
 		<!-- First Part: {MajorVersion}.{MinorNoneBreakingVersion} -->
@@ -24,6 +23,12 @@
 		<PackageReference Include="AWSSDK.Core" Version="$(AWSSDK-Core)" />
 		<PackageReference Include="AWSSDK.SimpleSystemsManagement" Version="$(AWSSDK-SimpleSystemsManagement)" />
 		<PackageReference Include="Microsoft.Extensions.Configuration" Version="$(Microsoft-Extensions-Configuration)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="Readme.md">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
 	</ItemGroup>
 
 </Project>
