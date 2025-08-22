@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Description>Use AWS ParameterStore to configure your .net core project</Description>
+    <Description>Use AWS ParameterStore to configure your .net project</Description>
     <PackageProjectUrl>https://github.com/schwamster/ParameterStoreConfigurationProvider</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/schwamster/ParameterStoreConfigurationProvider/blob/master/LICENSE</PackageLicenseUrl>
     <Copyright>Bastian Töpfer</Copyright>
