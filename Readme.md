@@ -1,5 +1,7 @@
 
-# ParameterStoreConfigurationProvider [![NuGet](https://img.shields.io/nuget/v/ParameterStoreConfigurationProvider.svg)](https://www.nuget.org/packages/ParameterStoreConfigurationProvider/)
+# ParameterStoreConfigurationProvider [![NuGet](https://img.shields.io/nuget/v/Mohsens22.AWS.SSM.ParameterStoreConfigurationProvider.svg)](https://www.nuget.org/packages/Mohsens22.AWS.SSM.ParameterStoreConfigurationProvider/)
+
+> Note: This package is a fork of [this project](https://github.com/schwamster/ParameterStoreConfigurationProvider), with the aim of modernizing this library to be used with more modern .net / awssdk versions.
 
 Enrich your configuration with plain text or secure settings from AWS ParameterStore.
 

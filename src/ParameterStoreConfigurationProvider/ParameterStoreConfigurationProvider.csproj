@@ -3,13 +3,16 @@
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
 
+		<!-- First Part: Nuget information -->
+		<PackageId>Mohsens22.AWS.SSM.ParameterStoreConfigurationProvider</PackageId>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Description>Use AWS ParameterStore to configure your .net project</Description>
 		<PackageProjectUrl>https://github.com/mohsens22/ParameterStoreConfigurationProvider</PackageProjectUrl>
-		<PackageLicenseUrl>https://github.com/mohsens22/ParameterStoreConfigurationProvider/blob/master/LICENSE</PackageLicenseUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<Copyright>Bastian Töpfer</Copyright>
 		<RepositoryUrl>https://github.com/mohsens22/ParameterStoreConfigurationProvider</RepositoryUrl>
-		<Authors>Bastian Töpfer-Mohsens22</Authors>
+		<PackageReadmeFile>https://github.com/Mohsens22/ParameterStoreConfigurationProvider/blob/release/2-0-3-7/Readme.md</PackageReadmeFile>
+		<Authors>Bastian Töpfer, Mohsens22</Authors>
 		<PackageTags>AWS ParameterStore Configuration</PackageTags>
 		<!-- First Part: {MajorVersion}.{MinorNoneBreakingVersion} -->
 		<!-- Second Part: Matching the underlying AWSSDK version -->
